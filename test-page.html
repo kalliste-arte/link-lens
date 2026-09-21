@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Link Lens Test Page</title>
+    <style>
+      body { max-width: 720px; margin: 48px auto; padding: 0 20px; color: #211b20; font: 16px/1.6 system-ui, sans-serif; }
+      h1 { margin-bottom: 8px; }
+      p { color: #5d5158; }
+      li { margin: 14px 0; }
+      a { color: #075ca8; }
+      .note { padding: 12px 14px; border-left: 4px solid #ff335f; background: #fff1f4; }
+    </style>
+  </head>
+  <body>
+    <h1>Link Lens test page</h1>
+    <p>Hover over each link. These are examples only; none of the suspicious links are intended to be visited.</p>
+    <p class="note">A red cursor and warning tooltip mean the extension found signals worth reviewing. They do not prove that a link is malicious.</p>
+    <ul>
+      <li><a href="https://example.com/">Safe HTTPS example</a></li>
+      <li><a href="http://example.com/login">HTTP with a login path</a></li>
+      <li><a href="https://bit.ly/example">URL shortener example</a></li>
+      <li><a href="https://192.0.2.1/verify-account">IP address example</a></li>
+      <li><a href="https://example.com/verify-account?session=update">Bait-word example</a></li>
+      <li><a href="https://example.com/">https://trusted.example.com</a></li>
+    </ul>
+  </body>
+</html>

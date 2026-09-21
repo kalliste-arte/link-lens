@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Link Lens</title>
+    <style>
+      :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+      body { width: 290px; margin: 0; padding: 18px; background: #17131a; color: #f8eef1; }
+      h1 { margin: 0 0 8px; font-size: 20px; }
+      p { margin: 0; color: #cbbdc2; font-size: 13px; line-height: 1.5; }
+      .dot { display: inline-block; width: 9px; height: 9px; margin-right: 7px; border-radius: 50%; background: #ff335f; }
+      .status, section { margin-top: 16px; padding: 10px; border: 1px solid #49343c; border-radius: 8px; font-size: 12px; }
+      .status { color: #ffb6c3; }
+      h2 { margin: 0 0 8px; font-size: 13px; }
+      label { display: block; margin: 8px 0; color: #ded1d5; }
+      input[type="text"] { box-sizing: border-box; width: 100%; margin-top: 5px; border: 1px solid #59414a; border-radius: 5px; padding: 6px; background: #241b21; color: #fff; }
+      .summary { color: #f5dce2; }
+      small { color: #a9959c; }
+    </style>
+  </head>
+  <body>
+    <h1><span class="dot"></span>Link Lens</h1>
+    <p>Hover over links to see a risk level and the reasons behind it.</p>
+    <div class="status" id="summary">Scanning this page...</div>
+    <section>
+      <h2>Protection</h2>
+      <label><input type="checkbox" id="warnClicks" checked> Warn before high-risk clicks</label>
+      <label><input type="checkbox" id="warnDownloads" checked> Warn before risky downloads</label>
+      <label><input type="checkbox" id="privacyMode" checked> Privacy mode (local analysis only)</label>
+      <label><input type="checkbox" id="externalReputation"> Enable manual reputation lookup</label>
+    </section>
+    <section>
+      <h2>Allowlist</h2>
+      <input id="allowlist" type="text" placeholder="trusted.example.com, example.org">
+      <small>Comma-separated domains. Subdomains are included.</small>
+    </section>
+    <script src="popup.js"></script>
+  </body>
+</html>

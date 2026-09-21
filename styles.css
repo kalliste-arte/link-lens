@@ -1,0 +1,59 @@
+.link-lens-low,
+.link-lens-medium,
+.link-lens-high {
+  text-decoration: underline wavy 2px;
+  text-decoration-skip-ink: none;
+}
+
+.link-lens-low { text-decoration-color: #e1a51f; cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M5 3l20 14-9 2 5 9-4 2-5-10-6 6z' fill='%23e1a51f' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") 4 3, pointer !important; }
+.link-lens-medium { text-decoration-color: #ff7633; cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M5 3l20 14-9 2 5 9-4 2-5-10-6 6z' fill='%23ff7633' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") 4 3, pointer !important; }
+.link-lens-high { text-decoration-color: #ff335f; cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M5 3l20 14-9 2 5 9-4 2-5-10-6 6z' fill='%23ff335f' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") 4 3, pointer !important; }
+
+.link-lens-warning {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M5 3l20 14-9 2 5 9-4 2-5-10-6 6z' fill='%23ff335f' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") 4 3, pointer !important;
+  text-decoration: underline wavy #ff335f 2px;
+  text-decoration-skip-ink: none;
+}
+
+.link-lens-tooltip {
+  position: fixed;
+  z-index: 2147483647;
+  width: min(290px, calc(100vw - 16px));
+  padding: 12px 14px;
+  border: 1px solid #ff6682;
+  border-radius: 10px;
+  background: #24151b;
+  color: #fff7f8;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 24%);
+  font: 13px/1.4 system-ui, sans-serif;
+  pointer-events: auto;
+}
+
+.link-lens-tooltip strong,
+.link-lens-tooltip span {
+  display: block;
+}
+
+.link-lens-title { margin-bottom: 3px; }
+.link-lens-host { color: #d6c5ca; overflow-wrap: anywhere; }
+.link-lens-tooltip ul { margin: 8px 0; padding-left: 18px; }
+.link-lens-tooltip li { margin: 3px 0; }
+.link-lens-high .link-lens-title { color: #ff9eb0; }
+.link-lens-medium .link-lens-title { color: #ffb36d; }
+.link-lens-low .link-lens-title { color: #f0cf63; }
+.link-lens-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.link-lens-action {
+  border: 1px solid #76515e;
+  border-radius: 5px;
+  padding: 5px 7px;
+  background: #372129;
+  color: #fff7f8;
+  cursor: pointer;
+  font: inherit;
+}
+.link-lens-action:hover { background: #50303c; }
+
+.link-lens-tooltip strong {
+  margin-bottom: 4px;
+  color: #ff9eb0;
+}

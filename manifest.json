@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Link Lens",
+  "version": "1.0.0",
+  "description": "Highlights potentially suspicious links before you click them.",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_title": "Link Lens",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
